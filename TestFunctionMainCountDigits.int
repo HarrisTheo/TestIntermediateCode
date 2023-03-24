@@ -1,0 +1,16 @@
+100:begin_block,main_countdigits,_,_
+101:in,x,_,_
+102::=,0,_,count
+103:>,x,0,105
+104:jump,_,_,110
+105://,x,10,T%1
+106::=,T%1,_,x
+107:+,count,1,T%2
+108::=,T%2,_,count
+109:jump,_,_,103
+110:out,count,_,_
+111:end_block,main_countdigits,_,_
+112:begin_block,main,_,_
+113:call,main_countdigits,_,_
+114:halt,_,_,_
+115:end_block,main,_,_

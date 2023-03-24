@@ -1,0 +1,17 @@
+100:begin_block,main_factorial,_,_
+101:in,x,_,_
+102::=,1,_,fact
+103::=,1,_,i
+104:<=,i,x,106
+105:jump,_,_,111
+106:*,fact,i,T%1
+107::=,T%1,_,fact
+108:+,i,1,T%2
+109::=,T%2,_,i
+110:jump,_,_,104
+111:out,fact,_,_
+112:end_block,main_factorial,_,_
+113:begin_block,main,_,_
+114:call,main_factorial,_,_
+115:halt,_,_,_
+116:end_block,main,_,_
